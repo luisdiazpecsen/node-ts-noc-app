@@ -1,3 +1,9 @@
-const firstName: string = 'Luis';
+import { Server } from "./presentation/server";
 
-console.log(firstName);
+const main = () => {
+    Server.start();
+}
+
+(async () => {
+    main();
+})();
