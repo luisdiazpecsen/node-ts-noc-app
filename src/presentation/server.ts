@@ -49,7 +49,7 @@ export class Server {
         CronService.createJob(
             '*/5 * * * * *',
             () => {
-                const url = 'https://google.coms';
+                const url = 'https://google.com';
                 new CheckServiceMultiple(
                     [fsLogRepository, mongoLogRepository, postgresLogRepository],
                     () => console.log(`${url} is ok`),

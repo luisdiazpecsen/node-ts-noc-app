@@ -1,7 +1,9 @@
 {
     "exlude": [
         "node_modules",
-        "dist"
+        "dist",
+        "**/*.spec.ts",
+        "**/*.test.ts"
     ],
     "include": [
         "src"
